@@ -1,0 +1,27 @@
+{% include "header.html" %}
+<body>
+<div class="row">
+	<h1 style="text-align: center;">Index</h1>
+</div>
+
+<div class="container">
+   <div class="row">
+   	<div class="col-md-2"></div>
+   	<div class="col-md-8">
+
+	<form action="http://159.203.58.233:5000/add_ig" method="post" name="login">
+	<label for="ig_username">Instagram Username:</label>	
+	  <input type="username" name="ig_username" placeholder="Instagram Username">
+	  <br/>
+	  <label for="ig_passwod">Password:</label>
+	  <input type="password" name="ig_password" placeholder="Instagram Password">
+	  <br/>
+	  <input type="submit" value="submit">
+	</form>
+	</div> <!-- col-md-8 -->
+	<div class="col-md-2"></div>
+   </div>
+</div>
+
+</body>
+</html>

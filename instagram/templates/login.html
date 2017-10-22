@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <meta name="google-signin-client_id" content="343658080927-nmsdl6o0lon7uojbpqjdvblpkqdtmeg4.apps.googleusercontent.com">
+    <link rel="stylesheet" href="CSS/login.css" type="text/css"/>
+    <script type="text/javascript" src="app.js"></script>
+    <!--Typekit-->
+    <script src="https://use.typekit.net/vvs4qjy.js"></script>
+    <script>try{Typekit.load({ async: true });} catch(e){}</script>
+
+<!--------------------------BACKGROUND IMAGE-------------------------->    
+    <style>
+        body {
+        background-image: url("images/light_bulb.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        }
+    </style>
+
+<!--------------------------PARALINK LOGO-------------------------->    
+    <div id="logo">
+    <center><img class="logo" src="images/paralink_braille_blue.png" alt="logo" height=50px width=50px/></center>
+    </div>
+
+<!--------------------------TAB HEADER-------------------------->
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="Images/ParaLink_Braille_Blue.png" type="image/gif" sizes="24x24">
+        <title>ParaLink | Link With Us</title>
+    </head>
+
+<!--------------------------NAVBAR-------------------------->
+    <body>
+        <nav>
+            <div class="two">
+                    <ul class="sideLink">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+            </div>
+        </nav>
+    </body> 
+    
+<!--------------------------LOGIN-------------------------->
+    <body>    
+        <div class="container">
+            <h2 class="heading">WELCOME BACK.</h2>
+            <!--Email-->
+            <input type="email" id="txtEmail" placeholder="Email" class="email"/>
+            <br>
+            <!--Password-->                    
+            <input type="password" id="txtPassword" placeholder="Password" class="pass"/>
+            <br>
+            <!-- Submit Buttons-->
+            <button id="btnLogin" class="btn btn-action">Login</button>
+            <p class="register">No account? <a href="register.html" class="registerLink">Create one!</a></p>
+        </div>
+        
+        <div>
+        <style>
+            body {
+            color: #F8F8F8;
+            text-align: center;
+            justify-content: center;
+            }
+        </style>
+        <p class="register"><br><a href="agreement.html" class="registerLink">User Agreement</a><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="privacy.html" class="registerLink">Privacy Policy</a><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="cookie.html" class="registerLink">Cookie Policy</a></p>
+        <div>
+            <style>
+                body {
+                color: #F8F8F8;
+                text-align: center;
+                justify-content: center;
+                }
+            </style>
+        <p class="copyright">© 2017 ParaLink</p>
+        </div>
+        </div>
+
+<!--------------------------JAVASCRIPT-------------------------->
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLUDrOgwKS5l_2nk7Rz1Fjx_ZptzMwUnc",
+    authDomain: "paralink-ed33e.firebaseapp.com",
+    databaseURL: "https://paralink-ed33e.firebaseio.com",
+    storageBucket: "paralink-ed33e.appspot.com",
+    messagingSenderId: "343658080927"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="app.js"></script>
+
+<script>
+    //Load Email Login
+    window.onload=login();
+</script>
+
+    </body>
+</html>

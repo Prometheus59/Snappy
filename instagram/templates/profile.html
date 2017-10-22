@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/profile.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Profile</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/dashboard">Homepage</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/dashboard">Main Feed</a> <!--Need to change link-->
+                </li>
+                <li>
+                    <a href="/add_post">Add Post</a>
+                </li>
+                <li>
+                    <a href="/add_ig">Add Instagram Account</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="/profile"> <!--Need to make this page-->
+                        <span class="glyphicon glyphicon-user"></span>
+                        profile</a>
+                    </li>
+                    <li>UserID: 1</li>
+                </ul>
+            </div>
+        </nav>
+
+
+    <div class="jumbotron">
+	
+        	<img src="https://energyexposition.com/wp-content/uploads/2012/09/blank-profile-hi.png" alt="profile photo" height="150px" width="190px">
+        	<h1> Username's Profile <h1>
+	
+    </div>
+    
+    <div class="info">
+	<h3>Full Name<h3>
+	<h3>Email Address<h3>
+	<h3>Change Password<h3>
+    </div>
+    
+</body>
+</html>

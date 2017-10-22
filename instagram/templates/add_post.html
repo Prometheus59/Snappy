@@ -1,0 +1,61 @@
+{% include "header.html" %}
+<body>
+
+<!-- Navigation bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">TeamName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">Main Feed</a> <!--Need to change link-->
+                </li>
+                <li class="active">
+                    <a href="/add_post">Add Post</a>
+                </li>
+                <li>
+                    <a href="/add_ig">Add Instagram Account</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/profile"> <!--Need to make this page-->
+                        <span class="glyphicon glyphicon-user"></span>
+                        profile</a>
+                    </li>
+                    <li>UserID: 1</li>
+                </ul>
+            </div>
+        </nav>
+
+
+<div class="row">
+	<h1 style="text-align: center;">Add Post</h1>
+</div>
+
+<div class="container">
+   <div class="row">
+   	<div class="col-md-2"></div>
+   	<div class="col-md-8">
+
+	<form action="http://159.203.58.233:5000/add_post" method="post" enctype="multipart/form-data">
+		<input type="file" name="file"/>
+	<label for="post_caption">Post Caption:</label>	
+	  <input type="text" name="post_caption" placeholder="Post Caption">
+	  <br/>
+	  <label for="date">Date</label>
+	  <input type="date" name="date" placeholder="Date">
+	  <br/>	  
+	  <label for="time">Time</label>
+	  <input type="time" name="time" placeholder="Time">
+	  <br/>
+	  <input type="submit" value="submit">
+	</form>
+	</div> <!-- col-md-8 -->
+	<div class="col-md-2"></div>
+   </div>
+</div>
+
+</body>
+</html>

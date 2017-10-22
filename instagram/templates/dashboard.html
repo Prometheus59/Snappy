@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/dashboard.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://docs.google.com/presentation/d/1FJAn2EvjAce4eJNHunFP-DwNdMpHk1MD_Zgb1YypeKM/edit?usp=sharing" target="_blank">TeamName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/dashboard">Main Feed</a>
+                </li>
+                <li>
+                    <a href="/add_post">Add Post</a>
+                </li>
+                <li>
+                    <a href="/add_ig">Add Instagram Account</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/profile"> <!--Need to make this page-->
+                        <span class="glyphicon glyphicon-user"></span>
+                        {{ig_acc[0][0]}}</a>
+                    </li>
+                    <li>UserID: {{data}}</li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="page_header">
+            <h1>My Posts</h1>            
+        </div>
+        
+        <div class="container">
+            <img class="img-rounded img-responsive" src="https://www.runnersworld.com/sites/runnersworld.com/files/styles/listicle_slide_custom_user_phone_1x/public/beagle2.jpg?itok=lv5EvG-2"
+                alt="dog" height="100px" width="100px">
+            <ol class="item">
+                <!-- 0=ID, 1=filename, 2=Caption, 3=Date, 4=Time    -->
+                {% for post in posts %}
+                
+                <ul class="list-unstyled">
+                    <li>{{post[0]}}</li>
+                    <li>{{post[1]}}</li>
+                    <li>{{post[2]}}</li>
+                    <li>{{post[3]}}</li>
+                    <li>{{post[4]}}</li>
+                </ul>
+                {% endfor %}
+            </ol>
+        </div>
+        
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,18 @@
+body {
+    color:#000;
+    text-align:center;
+    background:url("http://d1qhuz9ahqnrhh.cloudfront.net/wp-content/uploads/2016/05/instagram_gradient_wallpaper_by_jasonzigrino-da28exh.png") no-repeat center center fixed;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo {
+    padding-top: 150px;
+}
+
+button {
+    margin-top: 20px;
+}

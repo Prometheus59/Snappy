@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/instagramlogin.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Instagram Login</title>
+</head>
+
+
+<body>
+
+<!-- Navigation bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">TeamName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/dashboard">Main Feed</a>
+                </li>
+                <li>
+                    <a href="/add_post">Add Post</a>
+                </li>
+                <li class="active">
+                    <a href="/add_ig">Add Instagram Account</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/profile"> <!--Need to make this page-->
+                        <span class="glyphicon glyphicon-user"></span>
+                        profile</a>
+                    </li>
+                    <li>UserID: 1</li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    <header>
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" class="img-rounded center-block"
+        alt="Instagram" height="20%" width="20%">
+    </header>
+    <form>
+        <div class="container text-center">
+            
+            <div class="input-group col-xs-4 col-xs-offset-4">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                </span>
+                <input id="email" type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div class="input-group col-xs-4 col-xs-offset-4">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                </span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button class="btn btn-outline-success my-2" type="submit">Login</button>
+        </div>
+    </form>
+    
+</body>
+</html>
